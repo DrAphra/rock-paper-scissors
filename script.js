@@ -58,7 +58,8 @@ function game(){
     let scorePlayer = 0; // use let not const because the value changes; //we need to keep the score and report a winner or loser at the end
     let scoreComputer = 0;
     console.log("Welcome!")
-    /*for (let i = 0; i < 5; i++)*/ {
+    //for (let i = 0; i < 5; i++) { <-- remove this line for the makeover requested in TOP - UI making
+    while(true){ //loop indefinitely
         const playerSelection = getPlayerChoice();
         const computerSelection = getComputerChoice();
         console.log(playRound(playerSelection, computerSelection));
